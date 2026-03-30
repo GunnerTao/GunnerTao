@@ -149,39 +149,38 @@
 
 [WORD_GROUPS]
 
-# ═══════════════════════════════════════════════════════════════
-#                         法律领域
-# ═══════════════════════════════════════════════════════════════
+# ┌─────────────────────────────────────────────────────────────┐
+# │                      法律领域                     │
+# └─────────────────────────────────────────────────────────────┘
 
 [法律]
 /民法典|刑法修正案|网络安全法|数据安全法|个人信息保护法|反垄断法|反不正当竞争法|著作权法|专利法|商标法|未成年人保护法|妇女权益保障法|公司法|证券法|行政处罚法|行政复议法|民事诉讼法|刑事诉讼法|行政诉讼法|司法解释|指导案例|法治|立法|全国人大常委会|司法部|最高法|最高检|法治日报/ => 法律热点
 
 /(民法典|刑法修正案|网络安全法|数据安全法|个人信息保护法|反垄断法|公司法|证券法|行政处罚法|行政复议法|民事诉讼法|刑事诉讼法)\s*(出台|施行|修订|草案|征求意见)/i => 法律动态
 
-/律师|庭审|起诉|判决|上诉|合规|监管|罚款|约谈|反垄断调查|知识产权纠纷/ => 法律事件
+/律师|庭审|起诉|判决|上诉|合规|监管|罚款|约谈|反垄断调查|知识产权纠纷/i => 法律事件
 
 
-# ═══════════════════════════════════════════════════════════════
-#                         全球足球
-# ═══════════════════════════════════════════════════════════════
+# ┌─────────────────────────────────────────────────────────────┐
+# │                      足球领域                       │
+# └─────────────────────────────────────────────────────────────┘
 
 [足球]
 # 国际顶级赛事
-/World Cup|Asian Cup|European Championship|Copa America|Africa Cup of Nations|Champions League|Europa League|Europa Conference League|UEFA Champions League|UEFA Europa League|FIFA Club World Cup|Toyota Cup/ => 国际杯赛
+/\bWorld Cup\b|\bAsian Cup\b|\bEuropean Championship\b|\bCopa America\b|\bAfrica Cup of Nations\b|\bChampions League\b|\bEuropa League\b|\bEuropa Conference League\b|\bUEFA Champions League\b|\bUEFA Europa League\b|\bFIFA Club World Cup\b|\bToyota Cup\b/i => 国际杯赛
 
 # 职业联赛
-/Premier League|English Premier League|La Liga|Spanish La Liga|Serie A|Italian Serie A|Bundesliga|German Bundesliga|Ligue 1|French Ligue 1|中超|中国超级联赛|亚冠|亚足联冠军联赛|沙特联|美职联|日职联|K联赛/ => 职业联赛
+/\bPremier League\b|\bEnglish Premier League\b|\bLa Liga\b|\bSpanish La Liga\b|\bSerie A\b|\bItalian Serie A\b|\bBundesliga\b|\bGerman Bundesliga\b|\bLigue 1\b|\bFrench Ligue 1\b|中超|中国超级联赛|亚冠|亚足联冠军联赛|沙特联|美职联|日职联|K联赛/i => 职业联赛
 
 # 重要俱乐部与赛事别名
 /\bChampions League\b|\bUEFA Champions League\b/i => 欧冠
 /\bWorld Cup\b|\bFIFA World Cup\b/i => 世界杯
 
 # 球星动态
-/Messi|C罗|Mbappé|Haaland|Neymar|Son Heung-min|武磊/ => 球星动态
+/\bMessi\b|\bC罗\b|\bMbappé\b|\bHaaland\b|\bNeymar\b|\bSon Heung-min\b|武磊/i => 球星动态
 
 # 热点事件
-/Transfer|引援|续约|解约|主教练|下课|上任|签约|伤病|红牌|VAR|争议判罚|夺冠|保级|升级|降级/ => 足坛热点
-
+/\bTransfer\b|引援|续约|解约|主教练|下课|上任|签约|伤病|红牌|\bVAR\b|争议判罚|夺冠|保级|升级|降级/i => 足坛热点
 
 
 # ═══════════════════════════════════════════════════════════════
